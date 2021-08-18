@@ -9,5 +9,127 @@
 </head>
 
 
+<!-- Задание 1:  Отличие в префиксной и постфиксной формах записи удвоения переменой. 
+    В обеих случаях происходит параллельные изменение переменных a и b, поэтому в конце они возврвщвют одинаковые значения. 
+    При этом в процессе удвоения, a увеличивается и сразу возвращает удвоенное значение, 
+    а b приудвоении возвращеет предидущее значение, а удвоенное вследующем операторе.
+
+    Задание 2:  в выражении var a = 2;
+                var x = 1 + (a *= 2); 
+                х равен 5
+-->
+<!--Задание 3
+<script>
+    var result;
+    var a = +prompt('Введите любое целое число A в диапазоне от -99 до 99');
+    var b = +prompt('Введите любое целое число B в диапазоне от -99 до 99');
+    if (a >= 0 && b >= 0) {
+        result = a - b;
+        alert('Вы ввели оба положительных числа, разность которых соcтавит ' + result);
+    } else if (a < 0 && b < 0) {
+        result = a * b * -1;
+        alert('Вы ввели оба отрицательных числа, произведение которых соcтавит ' + result);
+    } else {
+        result = a + b;
+        alert('Вы ввели числа разных знаков, сумма которых составит ' + result);
+    }
+</script> -->
+
+<!--Задание 4
+<script>
+    let a = prompt('Введите любое целое число A в диапазоне от 0 до 15');
+    switch (a) {
+        case '0':
+            document.write('0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15');
+            break;
+        case '1':
+            document.write('1 2 3 4 5 6 7 8 9 10 11 12 13 14 15');
+            break;
+        case '2':
+            document.write('2 3 4 5 6 7 8 9 10 11 12 13 14 15');
+            break;
+        case '3':
+            document.write('3 4 5 6 7 8 9 10 11 12 13 14 15');
+            break;
+        case '4':
+            document.write('4 5 6 7 8 9 10 11 12 13 14 15');
+            break;
+        case '5':
+            document.write('5 6 7 8 9 10 11 12 13 14 15');
+            break;
+        case '6':
+            document.write('6 7 8 9 10 11 12 13 14 15');
+            break;
+        case '7':
+            document.write('7 8 9 10 11 12 13 14 15');
+            break;
+        case '8':
+            document.write('8 9 10 11 12 13 14 15');
+            break;
+        case '9':
+            document.write('9 10 11 12 13 14 15');
+            break;
+        case '10':
+            document.write('10 11 12 13 14 15');
+            break;
+        case '11':
+            document.write('11 12 13 14 15');
+            break;
+        case '12':
+            document.write('12 13 14 15');
+            break;
+        case '13':
+            document.write('13 14 15');
+            break;
+        case '14':
+            document.write('14 15');
+            break;
+        case '15':
+            document.write('15');
+            break;
+    }
+</script>
+-->
+<!--Задания 5 и 6 
+<script>
+    let a = +prompt('Введите любое целое число A');
+    let b = +prompt('Введите любое целое число B');
+    let operation = prompt('Введите символ математической операции (+ - * /)');
+
+    function doPlus(a, b) {
+        return a + b;
+    }
+
+    function doMinus(a, b) {
+        return a - b;
+    }
+
+    function doTimes(a, b) {
+        return a * b;
+    }
+
+    function doDivided(a, b) {
+        return a / b;
+    }
+
+    function mathOperation(a, b, operation) {
+        switch (operation) {
+            case '+':
+                document.write(doPlus(a, b));
+                break;
+            case '-':
+                document.write(doMinus(a, b));
+                break;
+            case '*':
+                document.write(doTimes(a, b));
+                break;
+            case '/':
+                document.write(doDivided(a, b));
+                break;
+        }
+    }
+    mathOperation(a, b, operation);
+</script>
+-->
 
 </html>
